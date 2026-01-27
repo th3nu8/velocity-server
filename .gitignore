@@ -1,0 +1,14 @@
+# Ignore world data
+world/
+world_nether/
+world_the_end/
+
+# Ignore logs and temp files
+logs/
+cache/
+*.log
+*.lck
+*.tmp
+
+# Ignore large server jars (optional, but recommended)
+*.jar
