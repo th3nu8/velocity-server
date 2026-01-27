@@ -1,15 +1,17 @@
-[03:42:42] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0...
-[03:42:42] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
-[03:42:42] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[03:42:42] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
-[03:42:42] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
-[03:42:42] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 1 plugins
-[03:42:43] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
-[03:42:43] [main/INFO] [com.velocitypowered.proxy.Metrics]: Velocity and some of its plugins collect metrics and send them to bStats (https://bStats.org).
-[03:42:43] [main/INFO] [com.velocitypowered.proxy.Metrics]: bStats collects some basic information for plugin authors, like how many people use
-[03:42:43] [main/INFO] [com.velocitypowered.proxy.Metrics]: their plugin and their total player count. It's recommended to keep bStats enabled, but
-[03:42:43] [main/INFO] [com.velocitypowered.proxy.Metrics]: if you're not comfortable with this, you can opt-out by editing the config.txt file in
-[03:42:43] [main/INFO] [com.velocitypowered.proxy.Metrics]: the '/plugins/bStats/' folder and setting enabled to false.
-[03:42:43] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.12s)!
-[03:42:46] [Thread-2/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
-[03:42:46] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
+[03:52:29] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0...
+[03:52:29] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[03:52:29] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[03:52:29] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[03:52:30] [main/ERROR] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Unable to load plugin plugins/BungeeGuard.jar
+com.velocitypowered.api.plugin.InvalidPluginException: The plugin file BungeeGuard.jar appears to be a Bukkit or BungeeCord plugin. Velocity does not support Bukkit or BungeeCord plugins.
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.getSerializedPluginInfo(JavaPluginLoader.java:161) ~[velocity-3.4.0-566.jar:3.4.0]
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:62) ~[velocity-3.4.0-566.jar:3.4.0]
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:101) ~[velocity-3.4.0-566.jar:3.4.0]
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:437) ~[velocity-3.4.0-566.jar:3.4.0]
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:308) ~[velocity-3.4.0-566.jar:3.4.0]
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[velocity-3.4.0-566.jar:3.4.0]
+[03:52:30] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 1 plugins
+[03:52:30] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[03:52:30] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.11s)!
+[03:52:50] [Thread-2/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[03:52:50] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565

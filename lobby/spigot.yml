@@ -14,6 +14,15 @@ config-version: 8
 settings:
   debug: false
   save-user-cache-on-stop-only: false
+  player-shuffle: 0
+  filter-creative-items: true
+  user-cache-size: 1000
+  int-cache-limit: 1024
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-threshold: 100.0
+  bungeecord: true
+  late-bind: false
+  sample-count: 12
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
@@ -25,15 +34,6 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  late-bind: false
-  sample-count: 12
-  player-shuffle: 0
-  filter-creative-items: true
-  user-cache-size: 1000
-  int-cache-limit: 1024
-  moved-wrongly-threshold: 0.0625
-  moved-too-quickly-threshold: 100.0
-  bungeecord: true
 timings:
   enabled: true
   verbose: true
@@ -67,6 +67,7 @@ stats:
 world-settings:
   default:
     verbose: true
+    mob-spawn-range: 4
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -87,7 +88,6 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    mob-spawn-range: 4
     nerf-spawner-mobs: false
     growth:
       cactus-modifier: 100
